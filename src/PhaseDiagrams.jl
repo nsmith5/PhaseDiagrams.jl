@@ -1,5 +1,5 @@
 module PhaseDiagrams
 
-# package code goes here
+include("commontangent.jl")
 
 end # module
