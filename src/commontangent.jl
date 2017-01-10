@@ -65,5 +65,9 @@ function commontangent{T}(arr::Vector{T})
     return convexregions
 end
 
+function commontangent(arr...)
+    f = min(arr...)
+    return commontangent(f)
+end
 
 
