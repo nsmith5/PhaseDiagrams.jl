@@ -1,5 +1,3 @@
-import Base: expand
-
 export commontangent
 
 function isconvex(i, j, k, arr)
@@ -38,12 +36,12 @@ function mergeregions!(regions::Vector{Tuple{Int, Int}})
 end
 
 """
-    commontanget{T}(arr::Vector{T})
+    commontanget(arr::Vector{T}) where T
 
 Given an array of values find the regions that are concave. Returns an array of
 tuples of indices where the array is concave between these indices.
 """
-function commontangent{T}(arr::Vector{T})
+function commontangent(arr::Vector{T}) where T
     N = length(arr)
     convexregions = Tuple{Int, Int}[]
 
